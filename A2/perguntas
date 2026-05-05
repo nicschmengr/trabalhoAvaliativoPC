@@ -1,0 +1,38 @@
+1) Entradas e saídas do sistema
+
+O sistema tem entradas e saídas.
+
+Entradas:
+
+ Botão 1: modo normal
+ Botão 2: modo atenção
+ Botão 3: modo crítico
+ Potenciômetro: controla a intensidade (de 0 a 1023)
+
+Saída:
+
+ LED RGB: mostra as cores (verde, amarelo e vermelho)
+
+
+2) Componentes e funções
+
+Botões: servem para escolher o modo da máquina
+LED RGB: mostra a cor de acordo com o modo
+Potenciômetro: controla o brilho da cor
+
+
+
+3) Regras de funcionamento
+
+ Sempre que apertar um botão, o modo muda
+ Se apertar mais de um botão, vale o mais crítico
+ O potenciômetro define a intensidade da luz
+
+
+
+4) Uso do IF
+
+ Se apertar o botão vermelho → liga o vermelho com a intensidade do potenciômetro
+ Senão, se apertar o amarelo → liga o amarelo
+ Senão, se apertar o verde → liga o verde
+ Senão → LED apagado ou mantém como estava
