@@ -1,0 +1,49 @@
+1. Introdução e Contextualização
+A ideia desse projeto foi desenvolver um sistema usando um Arduino Uno e um sensor de umidade do solo. A gente pensou nisso porque é bem comum as 
+pessoas esquecerem de regar as plantas ou então colocarem água demais. Com isso, resolvemos fazer um protótipo que consiga medir a umidade da terra
+e mostrar essas informações em um display. Além de ajudar no cuidado com as plantas, o projeto também serviu para colocar em prática o que aprendemos durante as aulas.
+
+2. Análise do Problema e Público-Alvo
+O problema é que muitas pessoas não sabem quando realmente precisam regar uma planta. Na maioria das vezes elas fazem isso só olhando para a terra, 
+o que pode acabar causando falta ou excesso de água. Esse sistema pode ser usado por qualquer pessoa que tenha plantas em casa, além de jardineiros e pequenos produtores.
+A ideia é facilitar esse cuidado e evitar desperdício de água.
+
+3. Funcionamento do Sistema
+O funcionamento é bem simples. O sensor fica colocado na terra e faz a leitura da umidade. Depois disso, 
+o Arduino recebe estas informações e compara os valores com os limites que foram programados. Se a terra estiver seca, 
+aparece uma mensagem no display avisando que precisa regar. Se estiver úmida, aparece uma mensagem dizendo que está tudo normal.
+
+4. Etapas de Desenvolvimento (Decomposição)
+Primeiro pensamos na ideia do projeto. Depois separamos todos os componentes que seriam usados. Em seguida montamos o circuito na
+protoboard e ligamos o sensor ao Arduino. Depois fizemos a programação, realizamos os testes com o sensor, configuramos o display LCD e
+fizemos alguns ajustes para deixar tudo funcionando corretamente.
+
+5. Reconhecimento de Padrões e Lógica de Programação
+O programa funciona sempre da mesma forma. Ele faz a leitura do sensor várias vezes, compara os valores
+encontrados e decide qual mensagem deve aparecer no display. Esse processo acontece o tempo todo enquanto o Arduino estiver ligado.
+
+6. Componentes Essenciais e Escopo Técnico
+Os principais componentes usados foram o Arduino Uno, o sensor de umidade do solo, o display LCD, a protoboard e os cabos de ligação.
+Nessa primeira versão a gente preferiu não colocar internet nem bomba d'água automática, porque queríamos primeiro garantir que o sensor 
+funcionasse corretamente. Mais para frente dá para adicionar essas funções e também usar o módulo Bluetooth.
+
+7. Algoritmo de Execução
+Primeiro o Arduino é ligado. Depois ele faz a leitura do sensor de umidade. Em seguida compara esse valor com o limite que foi definido.
+Se o solo estiver seco, mostra uma mensagem dizendo que é preciso regar a planta. Se o solo estiver úmido, informa que está tudo certo. 
+Depois espera alguns segundos e faz uma nova leitura, repetindo esse processo continuamente.
+
+8. Escopo da Simulação e Resultados Iniciais
+Na simulação foi testada a leitura da umidade do solo e o funcionamento do display. Durante o desenvolvimento conseguimos montar o circuito,
+conectar os componentes, programar o Arduino e fazer o sensor mostrar os valores corretamente. Também deixamos o módulo Bluetooth instalado para usar em uma próxima etapa.
+
+9. Registro de Testes e Oportunidades de Melhoria
+Durante os testes o sistema funcionou bem. O sensor conseguiu identificar quando a terra estava seca e quando estava úmida. 
+No começo tivemos que ajustar alguns valores da programação porque as leituras variavam um pouco, mas depois de alguns testes conseguimos
+deixar mais estável. Como melhoria, pensamos em colocar uma bomba de irrigação automática e criar um aplicativo para acompanhar as informações pelo celular.
+
+10. Conclusão
+Com esse trabalho conseguimos entender melhor como o pensamento computacional pode ser usado para resolver
+problemas do dia a dia. Dividir o projeto em etapas ajudou bastante na organização e facilitou encontrar soluções para os problemas que apareceram
+durante a montagem. No final, o protótipo funcionou como esperado e conseguiu medir a umidade do solo e mostrar o resultado no display. Se continuássemos o projeto,
+gostaríamos de adicionar mais funções para deixar o sistema ainda mais completo.
+
